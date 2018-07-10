@@ -25,7 +25,7 @@ script:
 - sfdx force:org:display -u ciorg
 - sfdx force:source:push -u ciorg
 - sfdx force:apex:test:run -u ciorg --json -d testResult --wait 10
-- testRunId = $(cat testResult/test-result.json | jq '.summary.testRunId')
+- testRunId=$(cat testResult/test-result.json | jq '.summary.testRunId')
 - sfdx force:apex:test:report -u ciorg -i testRunId
 - sfdx force:org:delete -u ciorg -p
 - sfdx force:source:convert -d mdapioutput/
