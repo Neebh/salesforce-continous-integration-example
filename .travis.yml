@@ -28,5 +28,5 @@ script:
 #- testRunId=$(cat testResult/test-result.json | jq '.summary.testRunId')
 #- sfdx force:apex:test:report -u ciorg -i $testRunId
 - sfdx force:org:delete -u ciorg -p
-- sfdx force:source:convert -d mdapioutput/
-- sfdx force:mdapi:deploy -d mdapioutput/ -u $DESTINATION_USERNAME -w 10
+#- sfdx force:source:convert -d mdapioutput/
+#- sfdx force:mdapi:deploy -d mdapioutput/ -u $DESTINATION_USERNAME -w 10
