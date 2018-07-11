@@ -3,7 +3,7 @@ public with sharing class myclass {
 
 	}
 	public void myMethod() {
-	System.info('hi');
+	System.debug('hi');
 	}
 
 	public String getAppVersion() {
