@@ -2,7 +2,7 @@ public with sharing class myclass {
 	public myclass() {
 
 	}
-	public myMethod() {
+	public void myMethod() {
 	System.info('hi');
 	}
 
