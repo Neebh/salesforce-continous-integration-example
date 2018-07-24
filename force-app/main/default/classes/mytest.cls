@@ -8,4 +8,14 @@ private class mytest {
         // Uncomment the following line to cause a build failure
         // System.assert(false);
     }
+
+    @isTest
+    static void givenInputMultipleOfFive_ReturnsFoo() {
+       myclass demo = new myclass(); 
+       string returnValue = demo.fooOrFun(5);
+       System.assert(returnValue,'foo');
+
+    } 
+
+
 }
