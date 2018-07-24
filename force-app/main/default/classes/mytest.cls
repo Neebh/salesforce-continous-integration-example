@@ -13,7 +13,7 @@ private class mytest {
     static void givenInputMultipleOfFive_ReturnsFoo() {
        myclass demo = new myclass(); 
        string returnValue = demo.fooOrFun(5);
-       System.assert(returnValue,'foo');
+       System.assertEquals('foo',returnValue);
 
     } 
 
