@@ -6,8 +6,8 @@ public with sharing class myclass {
 		System.debug('hi');
 	}
 
-	public string fooOrFun(int i) {
-		Integer remainder = math.mod(12, 2);
+	public string fooOrFun(Integer i) {
+		Integer remainder = math.mod(i, 5);
 		if(remainder ==0) {
 			return 'foo';
 
